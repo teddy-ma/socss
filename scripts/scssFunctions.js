@@ -1,4 +1,4 @@
-const { types } = require('node-sass'); /* eslint-disable-line import/no-extraneous-dependencies */
+const { types } = require('node-sass'); 
 
 const getBuildData = require('./getBuildData');
 

@@ -1,4 +1,4 @@
-const git = require('git-rev-sync'); /* eslint-disable-line import/no-extraneous-dependencies */
+const git = require('git-rev-sync'); 
 
 module.exports = (isCompiled = false) => {
   let buildData = '';
