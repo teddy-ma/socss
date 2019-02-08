@@ -1,17 +1,20 @@
 // Override reboot.scss
 
 html,
-body,
 kbd,
-samp {
-  font-family: $font-family-serif;
+samp,
+body, 
+button, 
+input, 
+select, 
+textarea {
+  font: 300 1em/1.8 $font-family-serif;
 }
 
 body {
   font-size: $font-size;
   color: $color-text;
   background-color: $color-bg;
-  -webkit-font-smoothing: none;
 }
 
 button,
