@@ -31,7 +31,7 @@
     "@storybook/html": "^4.1.11",
     "autoprefixer": "^9.4.7",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^7.1.5",
     "clean-css-cli": "^4.2.1",
     "commitizen": "^3.0.5",
     "css-loader": "^2.1.0",
