@@ -5,7 +5,7 @@ const stories = storiesOf('Links', module);
 
 stories.add('link', () => {
   return `
-  <a href="#">Link</a>
+  <a href="javascript:void(0)">Click me to somewhere</a>
   `;
 });
 
@@ -14,6 +14,3 @@ stories.add('buttom', () => {
   <button>Button</button>
   `;
 });
-
-
-
