@@ -11,3 +11,11 @@ stories.add('code', () => {
   </pre>
   `;
 });
+
+stories.add('quote', () => {
+  return `
+<blockquote>
+  <p>Every piece of knowledge has one and only one representation</p>
+</blockquote>
+  `;
+});
