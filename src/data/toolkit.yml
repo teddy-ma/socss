@@ -1,0 +1,7 @@
+colors:
+  primary:
+    $color-bg:      "#ffffff"
+    $color-bg-alt:  "#f8f8f8"
+    $color-border:  "#dddddd"
+    $color-text:    "#4a4a4a"
+    $color-primary: "#2fa58d"

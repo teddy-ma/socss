@@ -1,5 +1,4 @@
-/.sass-cache
-/.cache
-.DS_Store
-/.vscode
-node_modules/
+node_modules
+dist
+.sass-cache
+.idea

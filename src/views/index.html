@@ -1,0 +1,30 @@
+---
+title: Overview | Socss
+fabricator: true
+---
+
+<h1>Overview</h1>
+
+<p>这是我的个人网站 UI toolkit，除了少数组件，大多数 css 都不包含任何 class 选择器，适用于各类静态网站生成器所生成的网页。</p>
+
+<h2>Usage</h2>
+
+<p>Start by adding the following files to your page:</p>
+
+<pre class="language-markup">
+  <code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code>
+</pre>
+
+<h2>Color</h2>
+
+{{#each toolkit.colors}}
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
+
