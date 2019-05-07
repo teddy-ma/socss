@@ -8,15 +8,13 @@ button,
 input,
 select,
 textarea {
-  font: 300 1em/1.8 $font-family-serif;
+  font: $font-family-serif;
 }
 
 body {
   font-size: $font-size;
   color: $color-text;
   background-color: $color-bg;
-
-  font-family: "Arvo", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 button,
