@@ -1,0 +1,25 @@
+// Override reboot.scss
+
+html,
+kbd,
+samp,
+body,
+button,
+input,
+select,
+textarea {
+  font: $font-family-serif;
+}
+
+body {
+  font-size: $font-size;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+}
