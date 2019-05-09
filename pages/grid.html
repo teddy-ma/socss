@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+
+
+	
+<pre>
+  .columns-example, .vertical-algin-example, .fluid-example {
+    @include row;
+  }
+
+  .columns-example article {
+    @include col(1, 3);
+  }
+
+  .vertical-algin-example article {
+    background: #eee;
+    @include col(1, 3, $align: middle);
+  }
+</pre>
+
+<h2>Columns example</h2>
+<div class="columns-example">
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+  </article>
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+  </article>
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+  </article>
+</div>
+
+<h2>Vertical align example</h2>
+<div class="vertical-algin-example">
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolor odit nihil beatae tempore vitae ad perspiciatis libero eligendi rerum quae suscipit fugit aspernatur reprehenderit quisquam provident deserunt minima consequuntur.</p>
+  </article>
+
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </article>
+
+  <article>
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolor odit nihil beatae tempore vitae ad perspiciatis libero eligendi rerum quae suscipit fugit aspernatur reprehenderit quisquam provident deserunt minima consequuntur.</p>
+  </article>
+</div>
+
+
+
+
+
+	<!-- toolkit scripts -->
+	<script src="../assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
