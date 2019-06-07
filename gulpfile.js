@@ -43,6 +43,11 @@ const config = {
       dest: 'dist/assets/toolkit/styles',
       watch: 'src/assets/toolkit/styles/**/*.scss',
     },
+    demo: {
+      src: 'src/assets/toolkit/styles/demo.scss',
+      dest: 'dist/assets/toolkit/styles',
+      watch: 'src/assets/toolkit/styles/**/*.scss',
+    }
   },
   scripts: {
     fabricator: {
@@ -100,7 +105,22 @@ function stylesToolkit() {
     .pipe(gulp.dest(config.styles.toolkit.dest));
 }
 
-const styles = gulp.parallel(stylesFabricator, stylesToolkit);
+function stylesDemo() {
+  return gulp
+    .src(config.styles.demo.src)
+    .pipe(gulpif(config.dev, sourcemaps.init()))
+    .pipe(
+      sass({
+        includePaths: './node_modules',
+      }).on('error', sass.logError)
+    )
+    .pipe(prefix(config.styles.browsers))
+    .pipe(gulpif(!config.dev, csso()))
+    .pipe(gulpif(config.dev, sourcemaps.write()))
+    .pipe(gulp.dest(config.styles.demo.dest));
+}
+
+const styles = gulp.parallel(stylesFabricator, stylesToolkit, stylesDemo);
 
 // scripts
 const webpackConfig = require('./webpack.config')(config);
