@@ -1,0 +1,23 @@
+/**
+ * Toolkit styles
+ */
+
+@charset "utf-8";
+
+@import "base/variables.scss";
+@import "utilities/grid.scss";
+
+
+// for demo
+.columns-example, .vertical-algin-example {
+  @include row;
+}
+
+.columns-example article {
+  @include col(1, 3);
+}
+
+.vertical-algin-example article {
+  background: #eee;
+  @include col(1, 3, $align: middle);
+}
