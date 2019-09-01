@@ -224,6 +224,7 @@ function serve(done) {
     },
     notify: false,
     logPrefix: 'FABRICATOR',
+    browser: 'Chromium'
   });
   done();
 }

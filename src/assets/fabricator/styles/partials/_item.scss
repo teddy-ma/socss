@@ -85,5 +85,8 @@
 }
 
 .f-item-notes {
-	font-size: 0.875rem;
+  font-size: 1.5rem;
+  p {
+    border: 1px dashed black;
+  }
 }

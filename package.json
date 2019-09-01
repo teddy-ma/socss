@@ -64,7 +64,8 @@
     "webpack": "^4.26.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
+    "@babel/polyfill": "^7.0.0",
+    "gulp-cli": "^2.2.0"
   },
   "optionalDependencies": {}
 }
