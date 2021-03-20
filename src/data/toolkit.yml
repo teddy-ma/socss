@@ -1,7 +1,7 @@
 colors:
   primary:
-    $color-bg:      "#ffffff"
-    $color-bg-alt:  "#f8f8f8"
-    $color-border:  "#dddddd"
-    $color-text:    "#4a4a4a"
-    $color-primary: "#2fa58d"
+    $color-bg:      "#ECEFF4"
+    $color-bg-alt:  "#E5E9F0"
+    $color-border:  "#D8DEE9"
+    $color-text:    "#4C566A"
+    $color-primary: "#88C0D0"
